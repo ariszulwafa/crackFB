@@ -44,4 +44,5 @@ Eror? Pakai Link Ke 2
 
 LINK 2 : http://www.appcreator24.com/app1105533
 
-# NO RECODE YA AJC
+# CARA MENDAPATKAN TOKEN FB
+• CEK DI LINK BERIKUT https://youtu.be/L-tpu_1pJzg
