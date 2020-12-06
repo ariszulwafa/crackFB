@@ -14,3 +14,5 @@ LOGIN MELALUI TOKEN FB
 •git clone https://github.com/ariszywlafa1/crackFB
 
 •cd crackFB
+
+•python2 main.py
