@@ -25,3 +25,15 @@ LINK ARSPLOIT MARIS
 LINK DUNIA KODE
 
 •https://www.youtube.com/c/DuniaKode
+
+# LU PEMULA?
+DOWNLOAD APK ARSPLOIT
+ISI:
+•SCRIPT TERMUX
+•VIDEO TUTORIAL
+•ROOM CHAT UNTUK MENGOBROL
+•DAN KUIS BERHADIAH AKUN FB / BERGAME
+LINK : https://apk.e-droid.net/apk/app1105533.apk?v=11
+Eror? Pakai Link Ke 2
+LINK 2 : http://www.appcreator24.com/app1105533
+
