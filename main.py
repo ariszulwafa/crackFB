@@ -1,6 +1,10 @@
 #!usr/bin/python2
 # coding: UTF-8
-# subscrebe channel dunia kode
+# subscribe channel dunia kode
+# subscribe channel ARSPLOIT MARIS
+
+# MAU RECODE YA OM? ^_^
+# IZIN LAH AJC 08884196160
 import os
 import socket
 import sys
