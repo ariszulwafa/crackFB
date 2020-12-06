@@ -16,3 +16,5 @@ LOGIN MELALUI TOKEN FB
 •cd crackFB
 
 •python2 main.py
+
+# THANKS TO TEGAR IDZ
