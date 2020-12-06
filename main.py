@@ -3,6 +3,7 @@
 # subscribe channel dunia kode
 # subscribe channel ARSPLOIT MARIS
 
+
 # MAU RECODE YA OM? ^_^
 # IZIN LAH AJC 08884196160
 import os
@@ -68,6 +69,7 @@ logo = """
 \033[32;1mcreated \033[33;1m: \033[37;1mAris Zulwafa
 \033[32;1mtools   \033[33;1m: \033[37;1mCrack Fb
 \033[32;1mversi   \033[33;1m: \033[37;1m1.0
+\033[32;1mwhatsapp\033[33;1m: \033[37;1m088232456646
 
 """
 back = 0
@@ -87,6 +89,7 @@ def masuk():
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+30*'\033[33;1m='+'\033[31;1m[\033[33;1m+\033[31;1m]'
     print '\033[37;1m[\033[32;1m01\033[37;1m] \033[34;1mlogin using token'
     print '\033[37;1m[\033[32;1m02\033[37;1m] \033[34;1mtutorial dapat token'
+    print '\033[37;1m[\033[32;1m03\033[37;1m] \033[34;1mupdate tools'
     print '\033[37;1m[\033[31;1m00\033[37;1m] \033[34;1mexit'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+30*'\033[33;1m='+'\033[31;1m[\033[33;1m+\033[31;1m]'
     asup()
@@ -119,6 +122,8 @@ def asup():
     	token()
     elif milih == '2' or milih == '02':
         tutor()
+    elif milih == '3' or milih == '03':
+        update()
     elif milih == '0' or milih == '00':
         keluar()
         os.system('clear')
@@ -148,6 +153,15 @@ def token():
     except KeyError:
         print 'Token Salah'
         time.sleep(1.7)
+        masuk()
+
+def update():
+        os.system('clear')
+        print logo
+        print '\033[41;1m Mengupdate Script\033[00;1m'
+        time.sleep(1)
+        os.system('git pull')
+        time.sleep(2)
         masuk()
 
 def tutor():
