@@ -17,4 +17,11 @@ LOGIN MELALUI TOKEN FB
 
 •python2 main.py
 
-# THANKS TO TEGAR IDZ
+# SUBSCRIBE CHANNEL :)
+LINK ARSPLOIT MARIS
+
+•https://www.youtube.com/channel/UCTUErS7I0p1qGfbTEAToeUA
+
+LINK DUNIA KODE
+
+•https://www.youtube.com/c/DuniaKode
