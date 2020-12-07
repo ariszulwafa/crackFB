@@ -5,7 +5,7 @@
 
 
 # MAU RECODE YA OM? ^_^
-# IZIN LAH AJC 08884196160
+# NO RECODE DOG
 import os
 import socket
 import sys
@@ -178,7 +178,7 @@ def tutor():
         print '1.Untuk Menonton Video Tutorial'
         print '2.Untuk Keluar'
         cuk = raw_input('Pilih Mana: ')
-        elif cuk == '1' or cuk == '01':
+        if cuk == '1' or cuk == '01':
                print 'Membuka Youtube'
                time.sleep(1)
                os.system("xdg-open https://youtu.be/L-tpu_1pJzg")
