@@ -1,4 +1,4 @@
-# CRACK FB
+# SCRIPT NYA
 LOGIN MELALUI TOKEN FB
 
 •pkg update && pkg upgrade
