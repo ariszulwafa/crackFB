@@ -165,6 +165,16 @@ def update():
         time.sleep(2)
         masuk()
 
+def update1():
+        os.system('clear')
+        print logo
+        print '\033[41;1m Mengupdate Script\033[00;1m'
+        time.sleep(1)
+        os.system('git pull')
+        print '\033[41;1m Berhasil Di-update\033[00;1m'
+        time.sleep(2)
+        menu()
+
 def tutor():
 	os.system('clear')
         print logo
@@ -244,18 +254,21 @@ def menu():
 
     os.system('clear')
     print logo
+    print '\033[41;1m Selalu Update Scriptmu Agar Kamu Dapat Pembaruan:)\033[00;1m'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1mIDENTITASMU'
     print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m NAMAMU\x1b[1;90m  =\x1b[1;92m ' + nama
     print '\x1b[1;97m{\x1b[1;96m\xe2\x80\xa2\x1b[1;97m}\x1b[1;95m USER ID\x1b[1;90m =\x1b[1;92m ' + id
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1m    **TOOLS FACEBOOK**'
+    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1m         **TOOLS FACEBOOK**'
     print '\033[37;1m[\033[32;1m01\033[37;1m] \033[34;1mCrack ID Postingan Publik'
     print '\033[37;1m[\033[32;1m02\033[37;1m] \033[34;1mDump ID Teman'
     print '\033[37;1m[\033[32;1m03\033[37;1m] \033[34;1mSpam Comment'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
+    print '\033[37;1m{\033[31;1m!\033[37;1m} \033[34;1m            **LAINNYA**'
     print '\033[37;1m[\033[32;1m04\033[37;1m] \033[34;1mCara Mendapatkan ID Post'
     print '\033[37;1m[\033[32;1m05\033[37;1m] \033[34;1mDonasi Ke ARSPLOIT'
+    print '\033[37;1m[\033[32;1m06\033[37;1m] \033[34;1mUpdate Script'
     print '\033[37;1m[\033[31;1m00\033[37;1m] \033[31;1mLogout'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     pilih()
@@ -276,6 +289,8 @@ def pilih():
         kk()
     elif gokil == '5' or gokil == '05':
         donasi()
+    elif gokil == '5' or gokil == '05':
+        update1()
     elif gokil == '0' or gokil == '00':
         os.system('clear')
         print 'Delete token'
@@ -294,7 +309,7 @@ def spamkomen():
         os.system('python2 main.py')
     os.system("clear")
     print logo
-    print 'Jika Jumlah Spam Banyak,Maka Agak Lama'
+    print 'Jika Jumlah Spam Banyak,Mungkin Agak Lama'
     post = raw_input("\033[32;1mID Post \033[34;1m=> \033[37;1m")
     kom = raw_input("\033[32;1mKalimat \033[34;1m=> \033[37;1m")
     jml = int(input("\033[32;1mJumlah \033[34;1m=> \033[37;1m"))
