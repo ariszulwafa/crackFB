@@ -289,7 +289,7 @@ def pilih():
         kk()
     elif gokil == '5' or gokil == '05':
         donasi()
-    elif gokil == '5' or gokil == '05':
+    elif gokil == '6' or gokil == '06':
         update1()
     elif gokil == '0' or gokil == '00':
         os.system('clear')
