@@ -1,4 +1,5 @@
 # ARSPLOIT
+![ss](https://github.com/ariszywlafa1/crackFB/blob/main/Screenshot_20201209-074650.png)
 <p align="left">
 <a href="#"><img title="By ARSPLOIT" src="https://img.shields.io/badge/AUTHOR:%20ARSPLOIT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 
 <p align="center"> <img src=https://github-readme-stats.vercel.app/api?username=ariszywlafa1&show_icons=true&theme=tokyonight alt=ariszywlafa1 /> </p>
@@ -42,10 +43,6 @@ LINK : https://apk.e-droid.net/apk/app1105533.apk?v=11
 Eror? Pakai Link Ke 2
 
 LINK 2 : http://www.appcreator24.com/app1105533
-
-# SS
-![ss](https://github.com/ariszywlafa1/crackFB/blob/main/Screenshot_20201209-074650.png)
-
 
 # CARA MENDAPATKAN TOKEN FB
 • CEK DI LINK BERIKUT https://youtu.be/L-tpu_1pJzg
