@@ -269,6 +269,7 @@ def menu():
     print '\033[37;1m[\033[32;1m04\033[37;1m] \033[34;1mCara Mendapatkan ID Post'
     print '\033[37;1m[\033[32;1m05\033[37;1m] \033[34;1mDonasi Ke ARSPLOIT'
     print '\033[37;1m[\033[32;1m06\033[37;1m] \033[34;1mUpdate Script'
+    print '\033[37;1m[\033[32;1m07\033[37;1m] \033[34;1mReport Bug
     print '\033[37;1m[\033[31;1m00\033[37;1m] \033[31;1mLogout'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     pilih()
@@ -291,6 +292,8 @@ def pilih():
         donasi()
     elif gokil == '6' or gokil == '06':
         update1()
+    elif gokil == '7' or gokil == '07':
+        report()
     elif gokil == '0' or gokil == '00':
         os.system('clear')
         print 'Delete token'
@@ -319,6 +322,19 @@ def spamkomen():
     print '\033[33;1m[\033[31;1m*\033[33;1m] \033[34;1mSuccess'
     balik = raw_input('\033[31;1m[Enter Untuk Keluar]\n')
     menu()
+
+def report():
+    os.system("clear")
+    print logo
+    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
+    pesan = raw_input('\033[32;1mPesan? \033[34;1m: \033[37;1m')
+    pesan.replace(' ', '%20')
+    try:
+        sp.check_output(['am', 'start', 'https://api.whatsapp.com/send?phone=6288232456646&text=Laporan ' + pesan + ''])
+    except:
+        sys.exit()
+    exit('\033[31;1mthanks report bug to me')
+
 
 def crack_post():
     os.system('clear')
