@@ -1,24 +1,22 @@
+# HELLO TOD
+
+<p align="left">
+
+<a href="#"><img title="By ARSPLOIT" src="https://img.shields.io/badge/AUTHOR:%20ARSPLOIT%20ID-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+
 # SCRIPT NYA
-LOGIN MELALUI TOKEN FB
-
+```php
 •pkg update && pkg upgrade
-
 •pkg install python2
-
 •pip2 install requests
-
 •pip2 install mechanize
-
 •pip2 install bs4
-
 •pkg install git
-
 •git clone https://github.com/ariszywlafa1/crackFB
-
 •cd crackFB
-
 •python2 main.py
 
+```
 # SUBSCRIBE CHANNEL :)
 LINK ARSPLOIT MARIS
 
