@@ -71,6 +71,7 @@ logo = """
 \033[32;1mtools   \033[33;1m: \033[37;1mCrack Fb
 \033[32;1mversi   \033[33;1m: \033[37;1m1.0
 \033[32;1mwhatsapp\033[33;1m: \033[37;1m088232456646
+"""
 back = 0
 threads = []
 berhasil = []
