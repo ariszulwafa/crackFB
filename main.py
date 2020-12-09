@@ -324,17 +324,15 @@ def spamkomen():
     menu()
 
 def report():
-    os.system("clear")
+    os.system('clear')
     print logo
+    print 'Hanya Bisa Satu Kalimat:)'
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     pesan = raw_input('\033[32;1mPesan? \033[34;1m: \033[37;1m')
-    pesan.replace(' ', '%20')
-    try:
-        sp.check_output(['am', 'start', 'https://api.whatsapp.com/send?phone=6288232456646&text=Laporan ' + pesan + ''])
-    except:
-        sys.exit()
-    exit('\033[31;1mthanks report bug to me')
-
+    os.system("xdg-open https://wa.me/6288232456646?text="+pesan)
+    print 'Membuka Whatsapp'
+    time.sleep(2)
+    menu()
 
 def crack_post():
     os.system('clear')
