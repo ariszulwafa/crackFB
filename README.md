@@ -13,12 +13,12 @@ Gw Liatin Lu Ajc
 •pip2 install mechanize
 •pip2 install bs4
 •pkg install git
-•git clone https://github.com/ariszywlafa1/crackFB
+•git clone https://github.com/ariszulwafa/crackFB
 •cd crackFB
 •python2 main.py
 
 ```
-# SUBSCRIBE CHANNEL :)
+# SUBSCRIBE 
 LINK ARSPLOIT MARIS
 
 •https://www.youtube.com/channel/UCTUErS7I0p1qGfbTEAToeUA
@@ -27,7 +27,7 @@ LINK DUNIA KODE
 
 •https://www.youtube.com/c/DuniaKode
 
-# LU PEMULA?
+# PROMOSI
 DOWNLOAD APK ARSPLOIT
 ISI:
 
