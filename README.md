@@ -3,7 +3,7 @@ Gw Liatin Lu Ajc
 ![ss](https://github.com/ariszulwafa/crackFB/blob/main/1200px-Tux.svg.png)
 <p align="left">
 <a href="#"><img title="By ARSPLOIT" src="https://img.shields.io/badge/AUTHOR:%20ARSPLOIT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 
-<p align="center"> <img src=https://github-readme-stats.vercel.app/api?username=ariszywlafa1&show_icons=true&theme=tokyonight alt=ariszywlafa1 /> </p>
+<p align="center"> <img src=https://github-readme-stats.vercel.app/api?username=ariszulwafa&show_icons=true&theme=tokyonight alt=ariszulwafa /> </p>
 
 # SCRIPT NYA
 ```php
