@@ -15,7 +15,7 @@ Gw Liatin Lu Ajc
 •pkg install git
 •git clone https://github.com/ariszulwafa/crackFB
 •cd crackFB
-•python2 main.py
+•python2 run.py
 
 ```
 # SUBSCRIBE 
